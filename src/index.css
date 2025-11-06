@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(135deg, #F3EED9 0%, #E8DCC0 50%, #D4C5A0 100%);
+  }
+  
+  .earth-gradient {
+    background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 50%, #CDDC39 100%);
+  }
+  
+  .soil-pattern {
+    background-image: radial-gradient(circle at 25% 25%, #4A3F35 2px, transparent 2px),
+                      radial-gradient(circle at 75% 75%, #8BC34A 1px, transparent 1px);
+    background-size: 30px 30px, 20px 20px;
+  }
+}
