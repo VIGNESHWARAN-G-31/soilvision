@@ -18,7 +18,7 @@ const imageToBase64 = (file) => {
 // Enhanced Gemini AI soil analysis
 export const analyzeWithGemini = async (imageFile) => {
   try {
-    console.log('🤖 Starting Gemini AI enhanced soil analysis...');
+    console.log('🤖 Starting AI enhanced soil analysis...');
     
     // Convert image to base64
     const base64Image = await imageToBase64(imageFile);
